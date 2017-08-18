@@ -31,7 +31,7 @@
             </div>
             <div class="form-group">
                 @Html.LabelFor(c => c.Tipo)
-                @Html.TextBoxFor(c => c.Tipo, new { @class = "form-control" })
+                @Html.DropDownListFor(c => c.Tipo, ViewBag.tipos as SelectList,new { @class = "form-control" })
             </div>
             <div class="form-group">
                 @Html.LabelFor(c => c.Validade)
