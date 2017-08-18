@@ -1,0 +1,6 @@
+D:\2Semestre\Enterprise2S\Fiap.HelloWorld\Fiap.Conta.UI\obj\Debug\Fiap.Conta.UI.csprojResolveAssemblyReference.cache
+D:\2Semestre\Enterprise2S\Fiap.HelloWorld\Fiap.Conta.UI\bin\Debug\Fiap.Conta.UI.exe.config
+D:\2Semestre\Enterprise2S\Fiap.HelloWorld\Fiap.Conta.UI\bin\Debug\Fiap.Conta.UI.exe
+D:\2Semestre\Enterprise2S\Fiap.HelloWorld\Fiap.Conta.UI\bin\Debug\Fiap.Conta.UI.pdb
+D:\2Semestre\Enterprise2S\Fiap.HelloWorld\Fiap.Conta.UI\obj\Debug\Fiap.Conta.UI.exe
+D:\2Semestre\Enterprise2S\Fiap.HelloWorld\Fiap.Conta.UI\obj\Debug\Fiap.Conta.UI.pdb

@@ -1,0 +1,19 @@
+﻿@model Fiap.Exemplo01.MVC.Models.Paciente
+@{
+    ViewBag.Title = "Gravar";
+}
+
+<h2>Gravar</h2>
+
+<h2>@TempData["msg"]</h2>
+
+Nome: <h4>@ViewBag.nomePaciente</h4>
+Data de Nascimento:<h5>@ViewBag.dataAniversario</h5>
+
+<div>
+
+ Nome:   <p>@Model.Nome</p>
+ Data de Nascimento:   <p>@Model.DataNascimento.ToString("dd/MM/yyyy")</p>
+Número do Convênio   <p>@Model.Convenio</p>
+    Tipo Sanguíneo <p>@Model.Tipo</p>
+</div>

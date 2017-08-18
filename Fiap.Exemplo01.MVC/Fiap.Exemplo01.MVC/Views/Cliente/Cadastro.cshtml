@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Cadastro";
+}
+
+<h2>Cadastro de Cliente</h2>
+
+<form action="/Cliente/Gravar" method="post">
+    <div class="form-group">
+        <label>Nome:
+            <input type="text" name="nome" id="id-nm" class="form-control" />
+        </label>
+    </div>
+
+    <div class="form-group">
+        <label>Idade
+            <input type="text" name="idade" id="id-idade" class="form-control" />
+        </label>
+    </div>
+    <div class="form-group">
+        <label>E-Mail
+             <input type="text" name="email" id="id-email" class="form-control" />
+        </label>
+    </div>
+    <input type="submit" name="cadastrar" value="Cadastrar" class="btn btn-danger" />
+</form>
