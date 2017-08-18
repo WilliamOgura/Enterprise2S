@@ -1,0 +1,39 @@
+﻿@model List<Fiap.Exemplo02.MVC.Models.Cerveja>
+@{
+    ViewBag.Title = "Listar";
+}
+
+<h2>Listar</h2>
+<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>Marca</th>
+        <th>Preço</th>
+        <th>Possui Alcool</th>
+        <th>Tipo</th>
+        <th>Validade</th>
+    </tr>
+
+   @foreach (var c in Model)
+   {
+ <tr>
+        <td>@c.Nome</td>
+        <td>@c.Marca</td>
+        <td>@c.Preco</td>
+        <td>
+            @if (@c.SemAlcool)
+            {
+                @:Sim
+            }else
+            {
+                @:Não
+            }
+     </td>
+        <td>@c.Tipo</td>
+        <td>@c.Validade.ToString("dd/MM/yyyy")</td>
+
+    </tr>
+   }
+   
+
+</table>
