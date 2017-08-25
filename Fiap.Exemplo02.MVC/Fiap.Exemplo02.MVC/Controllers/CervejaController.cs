@@ -10,7 +10,9 @@ namespace Fiap.Exemplo02.MVC.Controllers
     public class CervejaController : Controller
     {
         private static List<Cerveja> _banco = new List<Cerveja>();
-        private static List<String> _tipos = new List<String>();
+
+        //No caso abaixo, a lista não pode ter static!
+        private List<String> _tipos = new List<String>();
 
         [HttpGet]    
         public ActionResult Cadastrar()
@@ -28,8 +30,8 @@ namespace Fiap.Exemplo02.MVC.Controllers
         {
             TempData["msg"] = "Cadastrado com sucesso";
             _banco.Add(cerveja);
-            ViewBag.tipos = new SelectList(_tipos);
-            return View();
+           // ViewBag.tipos = new SelectList(_tipos);
+            return RedirectToAction("Cadastrar");
         }
         public ActionResult Listar()
         {

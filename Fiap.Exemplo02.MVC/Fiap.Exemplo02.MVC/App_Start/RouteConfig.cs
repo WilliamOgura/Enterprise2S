@@ -16,7 +16,7 @@ namespace Fiap.Exemplo02.MVC
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Boteco", action = "Cadastro", id = UrlParameter.Optional }
             );
         }
     }

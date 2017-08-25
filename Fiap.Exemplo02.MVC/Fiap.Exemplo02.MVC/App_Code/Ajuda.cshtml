@@ -1,0 +1,17 @@
+﻿@helper Submit(string name) {
+    <input type="submit" value="@name" class="btn btn-primary"/>    
+}
+
+@helper Submit(string name, string classe) { 
+    <input type="submit" value="@name" class="@classe"/>
+}
+
+@helper Message(string mensagem)
+{
+if (mensagem != null)
+{
+        <div class="alert alert-success">
+            @mensagem
+        </div>
+}
+}

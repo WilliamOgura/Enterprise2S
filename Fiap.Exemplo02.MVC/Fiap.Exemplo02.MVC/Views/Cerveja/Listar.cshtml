@@ -16,23 +16,7 @@
 
    @foreach (var c in Model)
    {
- <tr>
-        <td>@c.Nome</td>
-        <td>@c.Marca</td>
-        <td>@c.Preco</td>
-        <td>
-            @if (@c.SemAlcool)
-            {
-                @:Sim
-            }else
-            {
-                @:Não
-            }
-     </td>
-        <td>@c.Tipo</td>
-        <td>@c.Validade.ToString("dd/MM/yyyy")</td>
-
-    </tr>
+ @Html.Partial("_linhaTabela",c)
    }
    
 
